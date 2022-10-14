@@ -25,10 +25,10 @@
   margin-top: 0;
 }
 
-#restartBtn{
+#restartBtn {
   color: #6c90ac;
   background-color: white;
-  border: 1px solid  #6c90ac;
+  border: 1px solid #6c90ac;
   border-radius: 5px;
   padding: 4px 8px;
   margin-bottom: 10px;
@@ -37,8 +37,8 @@
 }
 
 #restartBtn:hover {
-    background-color: #e0e0e0;
-  }
+  background-color: #e0e0e0;
+}
 /** Cards **/
 #cards {
   display: flex;
@@ -115,4 +115,3 @@
   font-weight: 700;
   color: #758d9a;
 }
-

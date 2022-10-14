@@ -3,14 +3,14 @@ const GAME_STATE = {
   SecondCardAwaits: "SecondCardAwaits",
   CardsMatchFailed: "CardsMatchFailed",
   CardsMatched: "CardsMatched",
-  GameFinished: "GameFinished"
+  GameFinished: "GameFinished",
 };
 
 const Symbols = [
   "https://assets-lighthouse.alphacamp.co/uploads/image/file/17989/__.png", // 黑桃
   "https://assets-lighthouse.alphacamp.co/uploads/image/file/17992/heart.png", // 愛心
   "https://assets-lighthouse.alphacamp.co/uploads/image/file/17991/diamonds.png", // 方塊
-  "https://assets-lighthouse.alphacamp.co/uploads/image/file/17988/__.png" // 梅花
+  "https://assets-lighthouse.alphacamp.co/uploads/image/file/17988/__.png", // 梅花
 ];
 
 const view = {
@@ -90,7 +90,7 @@ const view = {
     <p>You've tried: ${model.triedTimes} times</p>`;
     const header = document.querySelector("#header");
     header.before(div);
-  }
+  },
 };
 
 const model = {
@@ -102,7 +102,7 @@ const model = {
     );
   },
   score: 0,
-  triedTimes: 0
+  triedTimes: 0,
 };
 
 const controller = {
@@ -171,7 +171,7 @@ const controller = {
     model.triedTimes = 0;
     view.renderScore(model.score);
     view.renderTriedTimes(model.triedTimes);
-  }
+  },
 };
 
 const utility = {
@@ -181,11 +181,11 @@ const utility = {
       let randomIndex = Math.floor(Math.random() * (index + 1));
       [number[index], number[randomIndex]] = [
         number[randomIndex],
-        number[index]
+        number[index],
       ];
     }
     return number;
-  }
+  },
 };
 
 controller.generateCards();
