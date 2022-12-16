@@ -1,5 +1,5 @@
-### Memorizing Card Game
-A memorizcard game based on MVC framework
+### <p align="center">Memorizing Card Game</p>
+<p align="center">A memorizcard game based on MVC framework</p>
 
 
 ![image](https://github.com/jssffl/memorizing-card-game/blob/main/cardGame.png)
